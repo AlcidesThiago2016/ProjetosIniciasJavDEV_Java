@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +22,8 @@ public class Main {
         double price2 = 650.50;
         double measure = 53.234567;
 
+        Scanner sc= new Scanner(System.in);
+        String i;
 
         //Código
         System.out.print("Hello world!, ");
@@ -46,6 +49,11 @@ public class Main {
         System.out.printf("Rouded (three decimal places): %.3f\n", measure);
         Locale.setDefault(Locale.US);
         System.out.printf("US decimal point: %.3f\n", measure);
+
+        System.out.print("Informe uma String: ");
+        i = sc.next();
+        System.out.println(i);
+        sc.close();
 
     }
 }

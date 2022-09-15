@@ -55,5 +55,37 @@ public class Main {
         System.out.println(i);
         sc.close();
 
+        //Funções Matematicas
+
+        System.out.println();
+
+        double j = 3.0;
+        double k = 4.0;
+        double l = -5.0;
+        double B, N, M;
+
+        B = Math.sqrt(j);
+        N = Math.sqrt(k);
+        M = Math.sqrt(25.0);
+
+        System.out.println("Raiz quadrada de " + j + " = " + B);
+        System.out.println("Raiz quadrada de " + k + " = " + N);
+        System.out.println("Raiz quadrada DE = " + M);
+
+        B = Math.pow(j, k);
+        N = Math.pow(j, 2.0);
+        M = Math.pow(5.0, 2.0);
+        System.out.println(j + " elevado a " + k + " = " + B);
+        System.out.println(j + " elevado ao quadrado = " + N);
+        System.out.println("5 elevado ao quadrado = " + M);
+
+        B = Math.abs(k);
+        N = Math.abs(l);
+
+        System.out.println("VAlor absoluto de " + k + " = " + B);
+        System.out.println("VAlor absoluto de " + l + " = " + N);
+
+
+
     }
 }

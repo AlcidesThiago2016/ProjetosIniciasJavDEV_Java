@@ -10,11 +10,13 @@ public class aulaWhile {
         int x = sc.nextInt();
         int soma = 0;
 
+
         while ( x != 0){
             soma += x;
             x = sc.nextInt();
         }
 
         System.out.println(soma);
+        System.out.println();
     }
 }

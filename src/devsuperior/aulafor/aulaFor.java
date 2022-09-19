@@ -16,7 +16,7 @@ public class aulaFor {
             int x = sc.nextInt();
             soma += x;
         }
-        System.out.println("A soma dos numeros informados é : " + soma);
+        System.out.println("A soma dos numeros informados é  : " + soma);
 
         sc.close();
     }

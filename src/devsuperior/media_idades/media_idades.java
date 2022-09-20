@@ -28,7 +28,7 @@ public class media_idades {
 
             media = soma / nPessoas;
 
-            System.out.printf("MEDIA = %.2f\n", media);
+            System.out.printf("MEDIA  = %.2f\n", media);
         }
         sc.close();
     }

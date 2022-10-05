@@ -18,6 +18,11 @@ public class Program {
         double price = sc.nextDouble();
         Product product = new Product(name,price);
 
+        product.setName("Computer");
+        System.out.println("Update Product : " + product.getName());
+        product.setPrice(500.00);
+        System.out.println("Update Price : " + product.getPrice());
+
         System.out.println("Product data: " + product);
 
         System.out.println();

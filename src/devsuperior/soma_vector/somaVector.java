@@ -12,19 +12,20 @@ public class somaVector {
         System.out.print("Quantos numeros voce vai digitar? ");
         double n = sc.nextDouble();
         double[] vect = new double[(int) n];
-        double soma = 0.0;
-        double media = 0.0;
+        double soma = 0, media;
+
 
         for(int i=0; i < vect.length; i++) {
             sc.nextLine();
             System.out.print("Digite um numero: ");
             vect[i] = sc.nextDouble();
             soma += vect[i];
+
         }
 
         System.out.print("VALORES: ");
-        for(int i=0; i < vect.length; i++) {
-            System.out.print(vect[i] + " , ");
+        for (double v : vect) {
+            System.out.print(v + " , ");
         }
         System.out.println();
         media = soma / n;

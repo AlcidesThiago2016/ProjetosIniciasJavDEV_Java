@@ -11,7 +11,6 @@ public class mediaPares {
 
         int n, sumPairs = 0, nPairs = 0;
         double average;
-        String msg = null;
 
         System.out.print("Quantos elementos vai ter o vetor? ");
         n = sc.nextInt();

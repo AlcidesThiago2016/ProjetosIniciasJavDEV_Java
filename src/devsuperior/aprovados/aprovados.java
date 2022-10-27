@@ -15,7 +15,6 @@ public class aprovados {
         String[] names;
         double[] grade1, grade2;
 
-
         System.out.print("Quantas alunos serai digitados? ");
         n = sc.nextInt();
 

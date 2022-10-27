@@ -20,6 +20,7 @@ public class forEach {
             sc.nextLine();
             System.out.printf("Digite o %d nome: ", i + 1);
             names[i] = sc.nextLine();
+
         }
         for ( String search : names) {
             System.out.println(search);

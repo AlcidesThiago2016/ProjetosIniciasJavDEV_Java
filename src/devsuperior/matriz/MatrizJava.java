@@ -33,7 +33,6 @@ public class MatrizJava {
                 }
             }
         }
-
         System.out.println("Negative numbers: " + cont);
         sc.close();
     }

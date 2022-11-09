@@ -18,6 +18,7 @@ public class dates01 {
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
         DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
 
+
         System.out.println("d04 = " + d04);
         System.out.println("d04 formatado = " + d04.format(fmt1));
         System.out.println("d04 formatado chamando obj format 01 = " + fmt1.format(d04));

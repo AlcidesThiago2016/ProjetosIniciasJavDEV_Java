@@ -53,6 +53,7 @@ public class matrizGeral {
             System.out.printf("%.1f ", mat[i][coluna]);
         }
 
+
         System.out.printf("\n\nDIAGONAL PRINCIPAL: ");
 
         for (int i = 0; i < n; i++) {

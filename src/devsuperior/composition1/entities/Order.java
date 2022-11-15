@@ -66,7 +66,6 @@ public class Order {
         }
         return sum;
     }
-
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder();

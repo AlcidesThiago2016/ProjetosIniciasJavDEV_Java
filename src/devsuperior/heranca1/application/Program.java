@@ -48,5 +48,16 @@ public class Program {
         acc8.withDraw(200.0);
         System.out.println("Saldo conta saque - taxa account - tava businessAccount R$ " + acc8.getBalance());
 
+        // Exemplo polimorfismo
+
+        Account x = new Account(1008, "Vascos", 1000.0);
+        Account y = new SavingsAccount(1009, "Saulo", 1000.0, 0.01);
+
+        x.withDraw(50.0);
+        y.withDraw(50.0);
+
+        System.out.println("Saldo conta x(taxa de saque R$5) R$ = " + x.getBalance());
+        System.out.println("Saldo conta poupanca sem taxa R$ = " + y.getBalance());
+
     }
 }

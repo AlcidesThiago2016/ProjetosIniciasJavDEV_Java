@@ -34,5 +34,19 @@ public class Program {
             System.out.println("Update!");
         }
 
+        // Testes sobrescrição
+
+        Account acc6 = new Account(1005, "Alex", 1000.0);
+        acc6.withDraw(200.0);
+        System.out.println("Saldo conta com taxa R$ " + acc6.getBalance());
+
+        Account acc7 = new SavingsAccount(1006, "Maria", 1000.0, 0.01);
+        acc7.withDraw(200.0);
+        System.out.println("Saldo conta sem taxa R$ " + acc7.getBalance());
+
+        Account acc8 = new BusinessAccount(1007, "Fabio", 1000.0, 500.0);
+        acc8.withDraw(200.0);
+        System.out.println("Saldo conta saque - taxa account - tava businessAccount R$ " + acc8.getBalance());
+
     }
 }

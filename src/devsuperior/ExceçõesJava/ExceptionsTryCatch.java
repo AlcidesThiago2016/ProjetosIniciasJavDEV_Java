@@ -22,7 +22,6 @@ public class ExceptionsTryCatch {
         catch (InputMismatchException e){
             System.out.println("Input error!");
         }
-
         System.out.println("Enf of program!");
         sc.close();
     }

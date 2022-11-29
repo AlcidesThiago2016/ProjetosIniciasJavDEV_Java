@@ -15,6 +15,7 @@ public class Program1 {
                 System.out.println(sc.nextLine());
             }
         }
+
         catch (IOException e){
             System.out.println("Error: " + e.getMessage());
         }

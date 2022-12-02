@@ -13,11 +13,10 @@ public class CarRental {
     public CarRental() {
     }
 
-    public CarRental(LocalDateTime star, LocalDateTime finish, Vehicle vehicle, Invoice invoice) {
+    public CarRental(LocalDateTime star, LocalDateTime finish, Vehicle vehicle) {
         this.star = star;
         this.finish = finish;
         this.vehicle = vehicle;
-        this.invoice = invoice;
     }
 
     public LocalDateTime getStar() {

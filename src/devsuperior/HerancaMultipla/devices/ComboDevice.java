@@ -1,4 +1,4 @@
 package devsuperior.HerancaMultipla.devices;
 
-public class Printer {
+public class ComboDevice {
 }

@@ -22,6 +22,7 @@ public class Program {
         d.retainAll(b);
         System.out.println(d);
 
+
         //difference with set
         Set<Integer> e = new TreeSet<>(a);
         e.removeAll(b);

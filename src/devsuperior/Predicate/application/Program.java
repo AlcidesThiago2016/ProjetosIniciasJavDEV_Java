@@ -1,6 +1,7 @@
 package devsuperior.Predicate.application;
 
 import devsuperior.Predicate.entities.Product;
+import devsuperior.Predicate.util.ProductPredicate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ public class Program {
         list.add(new Product("Tablet",350.50));
         list.add(new Product("HD Case",80.90));
 
-        list.removeIf(p -> p.getPrice() >= 100);
+        list.removeIf(new ProductPredicate());
 
         for (Product p : list) {
             System.out.println(p);

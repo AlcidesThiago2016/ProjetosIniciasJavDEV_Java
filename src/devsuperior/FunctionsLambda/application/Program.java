@@ -6,6 +6,7 @@ import devsuperior.FunctionsLambda.util.UpperCaseName;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Program {
@@ -32,5 +33,10 @@ public class Program {
         System.out.println("Impressão lista com nomes maiusculos utilizando a função nonStaticUpperCaseName");
         List<String> names2 = list.stream().map(Product::noNStaticUpperCaseName).collect(Collectors.toList());
         names2.forEach(System.out::println);
+
+        System.out.println("Impressão lista com nomes maiusculos utilizando a empressão lambda declarada");
+        Function<Product, String> func = p -> p.getName().toUpperCase();
+        List<String> names3 = list.stream().map(func).collect(Collectors.toList());
+        names3.forEach(System.out::println);
     }
 }

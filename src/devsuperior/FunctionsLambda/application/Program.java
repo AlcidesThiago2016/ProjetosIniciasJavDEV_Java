@@ -38,5 +38,9 @@ public class Program {
         Function<Product, String> func = p -> p.getName().toUpperCase();
         List<String> names3 = list.stream().map(func).collect(Collectors.toList());
         names3.forEach(System.out::println);
+
+        System.out.println("Impressão lista com nomes maiusculos utilizando a empressão lambda inline");
+        List<String> names4 = list.stream().map(p -> p.getName().toUpperCase()).collect(Collectors.toList());
+        names4.forEach(System.out::println);
     }
 }

@@ -24,10 +24,13 @@ public class Program {
 
         System.out.println("Impressão lista com nomes maiusculos utilizando a classe UpperCaseName");
         names.forEach(System.out::println);
-        System.out.println();
 
         System.out.println("Impressão lista com nomes maiusculos utilizando a função staticUpperCaseName");
         List<String> names1 = list.stream().map(Product::staticUpperCaseName).collect(Collectors.toList());
         names1.forEach(System.out::println);
+
+        System.out.println("Impressão lista com nomes maiusculos utilizando a função nonStaticUpperCaseName");
+        List<String> names2 = list.stream().map(Product::noNStaticUpperCaseName).collect(Collectors.toList());
+        names2.forEach(System.out::println);
     }
 }

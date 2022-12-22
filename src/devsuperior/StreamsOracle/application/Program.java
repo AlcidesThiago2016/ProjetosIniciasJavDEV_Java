@@ -3,6 +3,7 @@ package devsuperior.StreamsOracle.application;
 import devsuperior.StreamsOracle.entities.Pessoa;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Stream;
@@ -26,5 +27,12 @@ public class Program {
                 .map(Pessoa::getAge);
         System.out.println("Idades pessoas nascidas no Brasil: ");
         System.out.println(Arrays.toString(stream1.toArray()));
+
+        //Implementando um Stream com operações intermediárias utilizando o metodo sorted, ordenando pelo nome da pessoa.
+        Stream<Pessoa> stream2 = pessoas.stream()
+                .filter(pessoa -> pessoa.getNationality().equals("Brasil"))
+                .sorted(Comparator.comparing(Pessoa::getName));
+        System.out.println("Pessoas nascidas no Brasil ordenadas pelo nome: ");
+        System.out.println(Arrays.toString(stream2.toArray()));
     }
 }

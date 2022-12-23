@@ -34,5 +34,11 @@ public class Program {
                 .sorted(Comparator.comparing(Pessoa::getName));
         System.out.println("Pessoas nascidas no Brasil ordenadas pelo nome: ");
         System.out.println(Arrays.toString(stream2.toArray()));
+
+        //Implementando um Stream com operações intermediárias utilizando o metodo distinct.
+        Stream<Pessoa> stream3 = pessoas.stream().distinct();
+        System.out.println("Exibe elementos que não se repetem na lista: ");
+        System.out.println(Arrays.toString(stream3.toArray()));
+
     }
 }

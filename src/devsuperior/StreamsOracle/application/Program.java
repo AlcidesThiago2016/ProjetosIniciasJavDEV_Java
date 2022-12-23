@@ -45,5 +45,9 @@ public class Program {
         System.out.println("Exibe somente 2 pessooas da lista: ");
         System.out.println(Arrays.toString(stream4.toArray()));
 
+        //Implementando um Stream com operações intermediárias utilizando o metodo ForEach.
+        System.out.println("Exibe os elementos da lista com ForEach ");
+        pessoas.stream().forEach(pessoa -> System.out.println(pessoa.getName()));
+
     }
 }

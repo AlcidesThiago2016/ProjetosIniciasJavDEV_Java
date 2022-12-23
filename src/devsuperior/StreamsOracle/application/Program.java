@@ -40,5 +40,10 @@ public class Program {
         System.out.println("Exibe elementos que não se repetem na lista: ");
         System.out.println(Arrays.toString(stream3.toArray()));
 
+        //Implementando um Stream com operações intermediárias utilizando o metodo limit.
+        Stream<Pessoa> stream4 = pessoas.stream().limit(2);
+        System.out.println("Exibe somente 2 pessooas da lista: ");
+        System.out.println(Arrays.toString(stream4.toArray()));
+
     }
 }

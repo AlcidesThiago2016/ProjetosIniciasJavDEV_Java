@@ -49,5 +49,13 @@ public class Program {
         System.out.println("Exibe os elementos da lista com ForEach ");
         pessoas.stream().forEach(pessoa -> System.out.println(pessoa.getName()));
 
+        //Implementando um Stream com operações intermediárias utilizando o metodo average.
+        double media = pessoas.stream()
+                .filter(pessoa -> pessoa.getNationality().equals("Brasil"))
+                .mapToInt(Pessoa -> Pessoa.getAge())
+                .average()
+                .getAsDouble();
+        System.out.println("A média das idades dos nascidos no Brasil é: " + media);
+
     }
 }

@@ -47,15 +47,23 @@ public class Program {
 
         //Implementando um Stream com operações intermediárias utilizando o metodo ForEach.
         System.out.println("Exibe os elementos da lista com ForEach ");
-        pessoas.stream().forEach(pessoa -> System.out.println(pessoa.getName()));
+        pessoas.forEach(pessoa -> System.out.println(pessoa.getName()));
 
         //Implementando um Stream com operações intermediárias utilizando o metodo average.
-        double media = pessoas.stream()
+        double media;
+        media = pessoas.stream()
                 .filter(pessoa -> pessoa.getNationality().equals("Brasil"))
-                .mapToInt(Pessoa -> Pessoa.getAge())
+               .mapToInt(Pessoa::getAge)
                 .average()
                 .getAsDouble();
         System.out.println("A média das idades dos nascidos no Brasil é: " + media);
 
+        //Implementando um Stream com operações intermediárias utilizando o metodo AllMatch.
+        boolean todosMexicanos = pessoas.stream().allMatch(pessoa -> pessoa.getNationality().equals("Mexico"));
+        if (todosMexicanos){
+            System.out.println("Todas as pessoas tem nacionalidade mexicana");
+        }else {
+            System.out.println("Existe pessoas de outras nacionalidades alem do Mexico");
+        }
     }
 }
